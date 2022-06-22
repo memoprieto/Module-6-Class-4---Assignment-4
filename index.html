@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Task Manger</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./styles/main.css" rel="stylesheet" >
+</head>
+
+<body>
+       
+    <main class="main-content container-fluid">
+
+        <section class="list">
+            <h3>Your pending tasks</h3>
+
+            <button id="btnShowHide" class="btn btn-dark">Show / Hide panel</button>
+            <button id="btnClear" class="btn btn-sm btn-danger">Clear All</button>
+
+            <div id="task-list"> 
+                <!-- here -->
+            </div>
+        </section>
+
+        <section id="pnlForm" class="form">
+            <h3>Task info</h3>
+
+            <div class="my-field">
+                <label>Title</label>
+                <input id="txtTitle" class="form-control" type="text">
+            </div>
+
+            <div class="my-field">
+                <label>Important</label>
+                <i id="iImportant" class="far fa-star"></i>
+            </div>
+
+            <div class="my-field">
+                <label>Duration (days)</label>
+                <input id="txtDuration" class="form-control" type="number">
+            </div>
+
+            <div class="my-field">
+                <label>Deadline</label>
+                <input id="selDeadline" class="form-control" type="datetime-local">
+            </div>
+
+            <div class="my-field">
+                <label>Location</label>
+                <input id="txtLocation" class="form-control" type="text">
+            </div>
+
+            <div class="my-field">
+                <label>Status</label>
+                <select id="selStatus" class="form-select">
+                    <option selected hidden value="-1">--- Select ---</option>
+                    <option value="0">New</option>   
+                    <option value="1">In Progress</option>  
+                    <option value="3">Blocked</option>  
+                    <option value="6">Completed</option>  
+                    <option value="9">Removed</option>  
+                </select>
+            </div>
+
+            <button id="btnSave" class="btn btn-dark">Save Task</button>
+
+        </section>
+
+    </main>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/test1.js"></script>
+    <script src="./scripts/task.js"></script>
+    <script src="./scripts/app.js"></script>
+</body> 
+
+</html>
+
+<!--
+Task:
+id
+title
+important
+duration
+deadline
+location
+status
+-->

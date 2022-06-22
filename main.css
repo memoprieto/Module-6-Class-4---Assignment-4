@@ -1,0 +1,76 @@
+body, 
+html {
+    background-color: #fafafa;
+    height: 100vh;
+}
+
+
+h3{
+    text-align: center;
+    color:brown
+}
+
+.main-content{
+    display:flex;
+}
+
+.list{
+    flex: 3;
+    /*background-color: aqua;*/
+}
+
+.form{
+    flex:2;
+    /*background-color: cadetblue;*/
+}
+
+#iImportant{
+    font-size:32px;
+    cursor:pointer;
+    color:#666;
+}
+
+#iImportant.fas{
+    color:red;
+}
+
+#task-list {
+    margin-top: 20px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    /* background-color: #4b9cf7; */
+    background-color: #f8f8fa;
+    border: 1px solid #ececf0;
+    border-radius: 4px;
+    padding: 7px 10px;
+    margin: 0 20px;
+    color: rgb(64, 67, 70);
+}
+
+.task:hover {
+    color:#fff;
+    background-color: #4b9cf7;
+    border: 1px solid #3c85d7;
+}
+
+
+.task h3 {
+    flex:3;
+    color: unset;
+    text-align: left;
+}
+
+.task label {
+    flex: 1;
+}
+
+.task .dates {
+    flex:1;
+}
+
+.task .dates label {
+    display: block;
+}
